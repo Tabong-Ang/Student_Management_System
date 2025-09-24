@@ -35,20 +35,24 @@ Install dependencies via pip:
 
 ```bash
 pip install pillow pywin32
+```
 
 To compile the app into a standalone .exe:
+```bash
 pyinstaller --onefile --windowed --icon=images/photo.ico --add-data "images;images" app.py
 Ensure all image assets and fonts are inside the images/ folder.
+```
 
 📥 Installer Setup (Optional)
 Use Inno Setup to create a branded installer:
 Installs to Program Files\StudentManagement
 Adds desktop and Start Menu shortcuts
 Uses your custom icon
-See installer_script.iss for configuration.
+See ```bash installer_script.iss``` for configuration.
 
 📁 Project Structure
 Student_Management_System/
+```bash
 ├── app.py
 ├── images/
 │   ├── photo.ico
@@ -59,12 +63,15 @@ Student_Management_System/
 ├── students_account_db
 ├── my_email.py
 ├── README.md
+```
 
 
 📧 Email Configuration
 Edit my_email.py to include your sender credentials:
+```bash
 email_address = "your_email@gmail.com"
 password = "your_app_password"
+```
 
 🧠 Notes
 All external assets are loaded using resource_path() for PyInstaller compatibility.
