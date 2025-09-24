@@ -40,8 +40,9 @@ pip install pillow pywin32
 To compile the app into a standalone .exe:
 ```bash
 pyinstaller --onefile --windowed --icon=images/photo.ico --add-data "images;images" app.py
-Ensure all image assets and fonts are inside the images/ folder.
 ```
+Ensure all image assets and fonts are inside the images/ folder.
+
 
 📥 Installer Setup (Optional)
 Use Inno Setup to create a branded installer:
